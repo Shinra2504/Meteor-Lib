@@ -14,13 +14,6 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-__exportStar(require("./functions/validation"), exports);
 __exportStar(require("./functions/convert"), exports);
-/*    TESTES */
-const format_1 = require("./functions/format");
-const validation_1 = require("./functions/validation");
-console.log((0, validation_1.isEmail)("sexo@gmail.com"));
-console.log((0, validation_1.isNumeric)("67"));
-console.log((0, validation_1.isUrl)("http://sexo.com.br"));
-console.log((0, validation_1.isPhoneNumber)("(XX) XXXX-XXXX"));
-console.log((0, format_1.captalize)("test captalize from meteor@core", true));
+__exportStar(require("./functions/format"), exports);
+__exportStar(require("./functions/validation"), exports);

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isDateValid = exports.isPasswordStrong = exports.isEqual = exports.isLessThan = exports.isGreaterThan = exports.isRgbColor = exports.isRegexColor = exports.isPhoneNumber = exports.isNumeric = exports.isUrl = exports.isEmail = void 0;
+exports.isPasswordStrong = exports.isEqual = exports.isLessThan = exports.isGreaterThan = exports.isRgbColor = exports.isRegexColor = exports.isPhoneNumber = exports.isNumeric = exports.isUrl = exports.isEmail = void 0;
 function isEmail(email) {
     return new RegExp(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/).test(email);
 }
@@ -50,14 +50,3 @@ function isPasswordStrong(password) {
         hasSpecialChar);
 }
 exports.isPasswordStrong = isPasswordStrong;
-function isDateValid(dateString) {
-    const regex = /^(\d{4}-\d{2}-\d{2}|\d{2}-\d{2}-\d{4})$/;
-    if (!regex.test(dateString))
-        return false;
-    const [year, month, day] = dateString.split(/[-]/).map(Number);
-    const date = new Date(year, month - 1, day);
-    return (date.getFullYear() === year &&
-        date.getMonth() + 1 === month &&
-        date.getDate() === day);
-}
-exports.isDateValid = isDateValid;
