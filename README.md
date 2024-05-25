@@ -68,3 +68,45 @@ console.log(isEqual(5, '5')); // false
 console.log(isPasswordStrong('Str0ng!Pass')); // true
 console.log(isPasswordStrong('weakpass')); // false
 ```
+
+# meteor-color
+
+```sheel
+npm install meteor-color
+```
+
+```javascript
+import meteor from "meteor-color";
+```
+
+### Usage
+```javascript
+// Functions
+meteor.warn("This is warn!") // Warning
+meteor.error("This is error!") // Error
+meteor.success("This is success") // Success
+meteor.info("This is info") // Info
+
+// Text Formatation
+console.log("Bold Message".bold) // Bold Message
+console.log("Underline Message".underline) // Underline Messsage
+
+// Colors
+console.log("Hello World".black) // Black
+console.log("Hello World".red) // Red
+console.log("Hello World".green) // Green
+console.log("Hello World".yellow) // Yellow
+console.log("Hello World".blue) // Blue
+console.log("Hello World".magenta) // Magenta
+console.log("Hello World".cyan) // Cyan
+console.log("Hello World".White) // White
+
+// Background Colors
+console.log("Hello World".bgBlack) // Background Black
+console.log("Hello World".bgRed) // Background Red
+console.log("Hello World".bgGreen) // Background Green
+console.log("Hello World".bgBlue) // Background Blue
+console.log("Hello World".bgMagenta) // Background Magenta
+console.log("Hello World".bgCyan) // Background Cyan
+console.log("Hello World".bgWhite) // Background White
+```
